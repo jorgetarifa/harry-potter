@@ -1,0 +1,71 @@
+@import url('http://fonts.cdnfonts.com/css/magic-school-one');
+@import url('http://fonts.cdnfonts.com/css/gremlins');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+
+
+.container{
+    background-image: url('https://res.cloudinary.com/jorge-tarifa/image/upload/v1648617387/best-hogwarts-house-in-harry-potter-ranked-fiction-horizon_j5f4vp.jpg');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+  
+}
+
+.characters {
+    width: 25vw;
+    height: 40vh;   
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    display: block;
+    margin: 0 auto;
+    -webkit-text-stroke: 1px red;
+    color: #fff;
+    
+    
+    
+}
+
+.image{
+    width: 20vw;
+    height: 20vw;
+    border-radius: .5rem;
+   font-family: 'Gremlins', sans-serif;
+    object-fit: center;
+    filter: drop-shadow(10px 10px 10px rgb(16, 22, 51));
+}
+
+
+
+.name{
+    font-family: 'Gremlins', sans-serif;
+    font-size: 2.3rem;
+
+}
+
+.house{
+   font-family: 'Gremlins', sans-serif;
+    font-size: 2.3rem;
+}
+
+.btn{
+    font-family: 'Gremlins', sans-serif;
+    padding: .4rem;
+    font-size: 1.3rem;
+    color: rgb(158, 255, 2);
+    background-color: rgb(13, 3, 39);
+    -webkit-text-stroke: .1px rgb(3, 39, 3);
+    border-radius:  3rem;
+    border: .2rem solid rgb(12, 12, 12);
+    cursor: pointer;
+                                                
+}
