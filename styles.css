@@ -41,7 +41,7 @@ body{
     border-radius: 5%;
     font-family:  'Lilita One', cursive;
     object-fit: center;
-    filter: drop-shadow(5px 5px 5px rgb(214, 229, 150));
+    filter: drop-shadow(2px 2px 2px rgb(214, 229, 150));
 }
 
 
@@ -51,7 +51,7 @@ body{
     font-family: 'Lilita One', cursive;
     font-size: 2.6vw;
     font-weight: bold;
-    -webkit-text-stroke: 1px rgb(14, 14, 14);
+    -webkit-text-stroke: 2px rgb(14, 14, 14);
 
 }
 
@@ -59,7 +59,7 @@ body{
    font-family:  'Lilita One', cursive;
    font-size: 2.6vw;
    font-weight: bold;
-   -webkit-text-stroke: 1px rgb(6, 5, 5);
+   -webkit-text-stroke: 2px rgb(6, 5, 5);
 }
 
 .mybtn{
@@ -70,7 +70,7 @@ body{
     border: 1px solid rgb(9, 9, 9);
     background-color: #1b1a1a;
     color: #fff;
-    -webkit-text-stroke: 1px rgb(151, 244, 0);
+    -webkit-text-stroke: .3px rgb(151, 244, 0);
     cursor: pointer;
                                                 
 }
