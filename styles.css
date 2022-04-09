@@ -52,7 +52,7 @@ body{
     font-family: 'Gremlins', sans-serif;
     font-size: 2.6vw;
     font-weight: bold;
-    -webkit-text-stroke: 6px rgb(14, 14, 14);
+    -webkit-text-stroke: 1px rgb(14, 14, 14);
 
 }
 
@@ -60,7 +60,7 @@ body{
    font-family: 'Gremlins', sans-serif;
    font-size: 2.6vw;
    font-weight: bold;
-   -webkit-text-stroke: 6px rgb(6, 5, 5);
+   -webkit-text-stroke: 1px rgb(6, 5, 5);
 }
 
 .mybtn{
