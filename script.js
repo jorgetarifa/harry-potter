@@ -1,41 +1,46 @@
 //DOM & API
-const containerAll = document.querySelector('.container')
-const url = ('http://hp-api.herokuapp.com/api/characters')
-const prevenir = (e) => e.preventDefault();
 
+const myFormulario = document.getElementById('myFormulario') 
+const myBtn = document.getElementById('myBtn')
+let myName = document.getElementById('myName')
+let myHouse = document.getElementById('myHouse')
+let myImage = document.getElementById('myImage')
+const url = ('https://fedeperin-harry-potter-api.herokuapp.com/personajes')
 
-const pintar = async () => {
+//Prevent default 
+myFormulario.addEventListener( 'submit', (e) => e.preventDefault() )
 
+//Onclick btn
+myBtn.addEventListener( 'click', async () => {
+  
 try{
-   let res = await fetch(url),
-   data = await res.json();
+   
+   let res = await fetch(url)
+   let data = await res.json()
+   console.log(data);
+   
+   let i = Math.floor( Math.random() * data.length )    
+ 
+   data.forEach( () => {  
+  
+    myHouse.innerHTML = (data[i].casaDeHogwarts === 'ninguna' ) ? ' Gryffindor' : data[i].casaDeHogwarts
+    myName.innerHTML = (data[i].personaje === 'Albus Percival Wulfric Brian Dumbledore') ? 'Albus Dumbledore' : data[i].personaje
+    myImage.setAttribute( 'src', `${ data[i].imagen }` )     
+            
+   })
+   }
+   catch{ ( error ) => console.log( error ) }
+   finally{
+     console.log('Lol');
+   }
+}
+)
+
+
+
+
  
 
-   data.forEach((el) => {
-      const { image, name, house } = el;
-      console.log(el);
-      let house1 = house ? house : 'Gryffindor'
-      let name1 = name ? name : 'Name Character'
+  
 
-     if(image) {
 
-       containerAll.innerHTML = `
-       <form class="characters">
-          <img src=${image} alt=${name1} class="image">
-          <h3 class="name">  ${name1} </h3> 
-          <h4 class="house"> ${house1} </h4> 
-          <button class="btn"> Nuevo personaje </button>
-                    
-       </form>  
-     
-          `
-   
-        console.log(`${name} ${house} ${image}` );
-     } 
-     })
-   }
-catch{ (error)
- } finally  {
- }
-}
-pintar()
