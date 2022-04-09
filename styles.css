@@ -41,7 +41,7 @@ body{
     border-radius: 5%;
     font-family:  'Lilita One', cursive;
     object-fit: center;
-    filter: drop-shadow(10px 10px 10px rgb(214, 229, 150));
+    filter: drop-shadow(5px 5px 5px rgb(214, 229, 150));
 }
 
 
